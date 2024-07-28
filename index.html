@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+	<title>WorlackGames</title>
+	<meta charset="utf-8">
+	<!-- подключение файлов таблиц стилей CSS, макета сетки веб-страниц grid -->
+	<link rel="stylesheet" href="css/reset.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/grid.css" type="text/css" media="screen"> 
+
+</head>
+<body id="page1">
+	<div class="bg">
+<!-- header -->
+		<header>
+
+			<!-- меню сайта -->
+			<div class="menu-row">
+				<div class="main">
+
+					<div class="container_12">
+						<div class="wrapper">
+							<div class="grid_12">
+								<nav class="wrapper">
+									<ul class="menu">
+										<li><a class="active" href="index.html">Главная</a></li>
+										<li><a href="news.html">Новости</a></li>
+										<li><a href="blog.html">Блог</a></li>
+										<li><a href="forum.html">Форум</a></li>
+										<li class="last-item"><a href="contacts_form.html">Обратная связь</a></li>
+									</ul>
+								</nav>
+							  
+							</div>
+						</div>
+					</div>
+				</div>
+		</header>
+		
+<!-- content -->
+		<section id="content">
+			<div class="main">
+<?php
+$host = 'localhost'; // адрес сервера MySQL
+$dbname = 'ch65988_bd'; // имя базы данных
+$username = 'ch65988_bd'; // имя пользователя базы данных
+$password = 'bGytf9TS!VgPygw'; // пароль пользователя базы данных
+
+// Подключение к базе данных
+$pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+?>
+<h2>Регистрация нового пользователя</h2>
+	<form action="register.php" method="post">
+		<label for="username">Имя пользователя:</label>
+		<input type="text" name="username" required>
+		<br>
+		<label for="password">Пароль:</label>
+		<input type="password" name="password" required>
+		<br>
+		<label for="confirm_password">Подтвердите пароль:</label>
+		<input type="password" name="confirm_password" required>
+		<br>
+		<input type="submit" value="Зарегистрироваться">
+	</form>
+				<div class="container_12">
+					<div class="wrapper">
+						<article class="grid_6">
+							
+							<div class="indent-center">
+
+
+								<h2>Популярные игры</h2>
+								<div class="wrapper border-bot indent-bot">
+									<figure class="img-indent border"><img src="images/page1-img1.jpg" alt="" /></a></figure>
+									<div class="extra-wrap">
+										<h4>Dancing Cats - Music Tiles</h4>
+										Dancing Cats – вы можете насладиться удивительной и красивой «Кошачьей музыкой» — смесью милого «мяукающего» звука и поп-музыки. Вы можете испытать чудесные чувства за пределами вашего воображения с идеальным сочетанием ритма и музыки. Вы также можете испытать различные стили песен, включая как мировые хиты, так и вашу любимую независимую музыку.
+									</div>
+								</div>
+								<div class="wrapper">
+									<figure class="img-indent border"><img src="images/page1-img2.jpg" alt="" /></a></figure>
+									<div class="extra-wrap">
+										<h4>Big Shark</h4>
+										Big Shark - это игра для Android, разработанная trieudoanit, которая относится к категории игр экшн. Игра бесплатна и предлагает управление акулой, которая поедает маленьких рыб и избегает больших, в то время как исследует различных животных в океане.
+									</div>
+								</div>
+							</div>
+						</article>
+						<!-- блок правый с лентой трендов -->
+						<article class="grid_3">
+							<h2>В трендах</h2>
+							<div class="wrapper indent-bot2">
+								<div class="numb first">1</div>
+								<div class="extra-wrap">
+									<strong class="text-1">Тираж PS5 превысил 32 млн устройств — из них 7,1 млн купили за последний квартал</a></strong>
+								</div>
+							</div>
+							<div class="wrapper indent-bot2">
+								<div class="numb second">2</div>
+								<div class="extra-wrap">
+									<strong class="text-1">ЮМОРНОЙ СИМУЛЯТОР РАЗВИТИЯ КОСМИЧЕСКОЙ СТАНЦИИ SPACEBASE STARTOPIA ВЫХОДИТ 23 ОКТЯБРЯ</a></strong>
+								</div>
+							</div>
+							<div class="wrapper">
+								<div class="numb third">3</div>
+								<div class="extra-wrap">
+									<strong class="text-1">Чумной доктор вернулся в Fortnite спустя три года</a></strong>
+
+<body>
+    <h1>Оставить комментарий</h1>
+    <form method="POST" action="process_comment.php">
+        <label>Ваше имя:</label>
+        <input type="text" name="name"><br>
+        <label>Ваш email:</label>
+        <input type="email" name="email"><br>
+        <label>Ваш комментарий:</label><br>
+        <textarea name="comment" rows="5" cols="50"></textarea><br>
+        <input type="submit" value="Отправить">
+    </form>
+</body>
+		
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	
+<!-- footer -->
+	<footer>
+		<div class="main">
+
+			<div class="container_12">
+				<div class="wrapper">
+					<div class="grid_8">
+						<div class="footer-text">
+							<b><strong>WorlackGames</strong> Copyright 2024</b>
+						</div>
+					  <ul class="list-services">
+							<li><a class="item-1" href="#"></a></li>
+							<li><a class="item-2" href="#"></a></li>
+							<li><a class="item-3" href="#"></a></li>
+						</ul>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

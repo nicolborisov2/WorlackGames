@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Обратная связь</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/reset.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">   
+	<script src="js/data.js" type="text/javascript"></script> 
+</head>
+<body id="page5">
+	<div class="bg">
+<!-- header -->
+		<header>
+			<div class="menu-row">
+				<div class="main">
+					<div class="container_12">
+						<div class="wrapper">
+							<div class="grid_12">
+								<nav class="wrapper">
+									<ul class="menu">
+										<li><a class="active" href="index.html">Главная</a></li>
+										<li><a href="news.html">Новости</a></li>
+										<li><a href="blog.html">Блог</a></li>
+										<li><a href="forum.html">Форум</a></li>
+										<li class="last-item"><a href="contacts_form.html">Обратная связь</a></li>
+									</ul>
+								</nav>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+		</header>
+		
+<!-- content -->
+		<section id="content">
+			<div class="main">
+				<div class="container_12">
+					<div class="wrapper">
+						<article class="grid_8">
+							<h3 class="p2">Обратная связь</h3>
+							<form name = "contact_form" action="congrates.htm" onsubmit="return validate_form ( );" 
+							id="contact-form" enctype="multipart/form-data">					
+								<fieldset>
+									<!--поля формы отмеченные * и атрибутом required обязательны для заполнения-->
+									<!--поля формы imya и therap проверяет скрипт data.js, остальные атрибутами input-->
+									  <label><span class="text-form">Фамилия, Имя, Отчество*</span>
+										<input name="imya" type="text" tabindex="1" /></label>
+									  <label><span class="text-form">Укажите Ваш Email*</span>
+										<input name="email" type="email" tabindex="2" required/></label>
+									  <label for="tel"><span class="text-form">Укажите Ваш номер телефона*</span>
+										<input name="tel" type="tel" tabindex="3" minlength="10" pattern="+[0-9]"
+										placeholder="+70000000000"required/></label>    
+										</select></label>
+										<label><span class="text-form">Введите Ваше сообщение</span>
+										<input name="promo" type="text"tabindex="7"/></label>
+											<div class="clear"></div>
+											<div class="buttons">
+												<input class="buttons"href="#" type="reset" name="clear"
+												 value="Очистить форму"></input>
+												<input class="buttons" href="#" type="submit" name="send"
+												 value="Отправить" ></input>
+											</div> 
+								</fieldset>						
+							</form>
+							<hr>
+						</article>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+<!-- footer -->
+	<footer>
+		<div class="main">
+			<div class="container_12">
+				<div class="wrapper">
+					<div class="grid_8">
+						<div class="footer-text">
+							<b><strong>WorlackGames</strong> Copyright 2024</b>
+						</div>
+						<ul class="list-services">
+							<li><a class="item-1" href="#"></a></li>
+							<li><a class="item-2" href="#"></a></li>
+							<li><a class="item-3" href="#"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
